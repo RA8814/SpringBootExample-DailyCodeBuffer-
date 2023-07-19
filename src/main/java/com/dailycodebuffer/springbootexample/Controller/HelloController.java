@@ -9,8 +9,9 @@ public class HelloController {
 //    @RequestMapping(value = "/", method = RequestMethod.GET)
     @GetMapping("/")
     public String helloWorld(){
-        return "Welcome to Daily Code Buffer's Tutorial! \n" +
-                "If you want to access the DepartmentController, use /department in the url.\n "+ "" +
-                "or /h2-console for the h2 database";
+        return """
+                Welcome to Daily Code Buffer's Tutorial!\s
+                If you want to access the DepartmentController, use /department in the url.
+                 or /h2-console for the h2 database""";
     }
 }
